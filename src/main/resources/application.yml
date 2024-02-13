@@ -1,0 +1,9 @@
+server:
+  port: 9031
+  address: '[::]'
+spring:
+  application:
+    name: jwt-service
+env:
+  file:
+    privateKeyPathPEM: "./private_key.pem"
