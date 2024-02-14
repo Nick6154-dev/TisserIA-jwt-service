@@ -39,6 +39,8 @@ public class JWTService implements IJWTService {
                             .issuer(jwtRequest.issuer())
                             .subject(jwtRequest.subject())
                             .claim("idPerson", jwtRequest.idPerson())
+                            .claim("name", jwtRequest.name())
+                            .claim("lastname", jwtRequest.lastname())
                             .claim("username", jwtRequest.username())
                             .claim("roles", jwtRequest.roleNames())
                             .issueTime(Date.from(now))
